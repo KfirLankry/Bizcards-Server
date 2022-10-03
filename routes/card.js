@@ -50,7 +50,7 @@ router.post("/", auth, async (req, res) => {
   }
 });
 
-// Find Cards of Specific User
+// Find Cards of Specific User (by ID)
 router.get("/my-cards", auth, async (req, res) => {
   try {
     const myCards = await Card.find({ user_id: req.payload._id });
