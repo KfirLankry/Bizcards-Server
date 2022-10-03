@@ -16,7 +16,7 @@ const cardSchema = joi.object({
     .string()
     .required()
     .min(9)
-    .max(10)
+    .max(12)
     .regex(/^0[2-9]\d{7,8}$/),
   business_image: joi.string().required(),
 });

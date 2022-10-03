@@ -4,6 +4,7 @@ require("dotenv").config();
 const logger = require("./middlewares/logger");
 const app = express();
 const PORT = process.env.PORT || 8000;
+const cors = require("cors");
 
 // Importing Routes
 const register = require("./routes/register");
@@ -14,6 +15,8 @@ const card = require("./routes/card");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(logger);
+// Enable Cors
+app.use(cors());
 
 // EndPoints
 app.use("/api/register", register);
