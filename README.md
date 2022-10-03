@@ -1,4 +1,4 @@
-# BizCards (Summary Project By Kfir Lankry)
+BizCards (Server Side)
 
 This is My second summary project on NodeJS lessons in Hackeru Development course, The project was all about developing a server side for business cards website.
 The project includes Registration (as user and as business user) + Login (with tokens) and CRUD of Cards from the DB.
